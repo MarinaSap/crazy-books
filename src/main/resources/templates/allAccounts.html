@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>All Accounts</title>
+</head>
+<body>
+    <div th:each="account : ${accounts}">
+      <div th:text="${'ID: ' + account.id + ' Login ' + account.login}"> </div>
+    </div>>
+</body>
+</html>
